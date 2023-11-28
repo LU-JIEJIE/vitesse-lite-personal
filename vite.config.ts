@@ -12,9 +12,6 @@ export default defineConfig({
       }
     }),
 
-    // https://github.com/hannoeru/vite-plugin-pages
-    // Page(),
-
     // https://github.com/posva/unplugin-vue-router
     VueRouter({}),
 
