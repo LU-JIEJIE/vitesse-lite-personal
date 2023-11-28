@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
     "@vueuse/core": "^10.6.1",
