@@ -1,7 +1,6 @@
 <script setup lang="ts" generic="T extends any, O extends any">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import TheInput from '../components/TheInput.vue'
 
 defineOptions({
   name: 'IndexPage'
@@ -19,8 +18,8 @@ function go() {
 <template>
   <div>
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Vitesse Lite
+      <a rel="noreferrer" href="https://github.com/LU-JIEJIE/vitesse-lite-personal" target="_blank">
+        Vitesse Lite Personal
       </a>
     </p>
     <p>
@@ -28,7 +27,6 @@ function go() {
     </p>
 
     <div py-4 />
-
     <TheInput
       v-model="name"
       placeholder="What's your name?"

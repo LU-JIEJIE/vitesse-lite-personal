@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
-const props = defineProps<{ name: string }>()
 const router = useRouter()
+const route = useRoute('/hi/[name]')
+const name = route.params.name
 </script>
 
 <template>
   <div>
     <div i-carbon-pedestrian inline-block text-4xl />
     <p>
-      Hi, {{ props.name }}
+      Hi, {{ name }}
     </p>
     <p text-sm op50>
       <em>Dynamic route!</em>
